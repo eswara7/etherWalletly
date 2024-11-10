@@ -1,16 +1,27 @@
+# 💠 React Transaction Tracker
+>>>>>>> 02fc207 (updated readme file)
 
-# wallet-assignment
-This repository contains the code for sharp ai assignment. t includes a web application designed to demonstrate seamless navigation using React Router, orm input validation,error handling,and clean,readable code practices.The assignment also incorporates Google Firestore for data storage.
+A simple **React** application designed to record and display transaction data. This project demonstrates smooth page navigation, intuitive form validation, and backend data management with Firebase.
 
-check here: https://wallet-assignment-pi.vercel.app/
+## ✨ Features
 
-=======
-# React + Vite
+- 🚀 **Multi-Page Navigation**:
+  - Three main pages — **Home**, **Transaction**, and **Data** — easily navigable with **React Router**.
+  - An elegant and responsive navbar for smooth page switching.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- 📝 **Transaction Page with Form Validation**:
+  - Form fields for **Wallet Address** and **Amount**.
+  - Validation for Ethereum addresses, ensuring correct format (`0x...`).
+  - Amount field validation, with acceptable numeric range limits.
+  - Securely submits data to **Firebase Firestore**.
 
-Currently, two official plugins are available:
+- 📊 **Data Page**:
+  - Fetches and displays transaction data from Firestore.
+  - **Loading indicators** and **error handling** to enhance user experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
->>>>>>> 20da3ea (completed assignment)
+## 🛠️ Technologies Used
+
+- **React.js**: Core framework for building the app.
+- **React Router**: Handles multi-page navigation.
+- **Firebase Firestore**: Backend database for storing transaction data.
+- **Tailwind CSS**: used for responsive, modern styling.
