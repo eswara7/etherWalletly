@@ -1,6 +1,4 @@
 # 💠 React Transaction Tracker
->>>>>>> 02fc207 (updated readme file)
-
 A simple **React** application designed to record and display transaction data. This project demonstrates smooth page navigation, intuitive form validation, and backend data management with Firebase.
 
 ## ✨ Features
