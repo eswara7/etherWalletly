@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios'; // Import Axios if you prefer to use it
+import axios from 'axios';
 import { Link } from 'react-router-dom';
 export default function DataPage() {
     const [data, setData] = useState([]);

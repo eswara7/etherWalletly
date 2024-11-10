@@ -1,6 +1,4 @@
-import { useState } from 'react'
 import Home from './pages/Home'
-
 import Data from "./pages/Data"
 import { BrowserRouter,Route,Routes } from 'react-router-dom'
 import TransactionPage from './pages/TransactionPage'

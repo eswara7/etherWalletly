@@ -22,7 +22,7 @@ export default function TransactionPage() {
       }
       //validating amount
       const parsedAmount = parseInt(amount);
-      if (isNaN(parsedAmount) || parsedAmount < 0 || parsedAmount > 10000) {
+      if (parsedAmount < 0 || parsedAmount > 10000) {
           setErrorMessage("Please enter a valid amount between 0 and 10,000");
           return;
       }
@@ -32,13 +32,10 @@ export default function TransactionPage() {
               walletAddress,
               amount
           });
-          // Displaying success message and resetting
           setSuccessMessage("Transaction submitted successfully!");
           setWalletAddress("");
           setAmount("");
           setErrorMessage(""); 
-
-          // catching error(if any)
       } catch (error) {
           console.error("Error submitting transaction:", error);
           setErrorMessage("error while submitting the transaction.");
@@ -47,7 +44,7 @@ export default function TransactionPage() {
   return (
     <div className="bg-slate-300 h-screen flex justify-center">
     <div className="flex flex-col justify-center">
-    <div className="rounded-lg bg-white w-80 text-center p-2 h-max px-4">
+    <div className="rounded-lg bg-white w-96 text-center p-2 h-max px-4">
     <InputBox onChange={e=>{setWalletAddress(e.target.value)}}label={"walletAddress"} placeholder={"e.g., 0x..."}/>
     <InputBox onChange={e=>{setAmount(e.target.value)}} label={"amount"} placeholder={"enter between 0 and 10,000"}/>
     {errorMessage && <p className="text-red-500">{errorMessage}</p>}
